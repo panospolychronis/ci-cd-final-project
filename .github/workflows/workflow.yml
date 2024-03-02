@@ -51,7 +51,8 @@ jobs:
         pip install flask nose coverage
       
     - name: Run unit tests with nose and coverage
-      run: nosetests -v --with-coverage --cover-package=app
+      run: nosetests -v --with-spec --spec-color --with-coverage --cover-package=app
+
 
     - name: Print coverage report
       run: |
